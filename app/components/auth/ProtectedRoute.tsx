@@ -12,7 +12,7 @@ export function ProtectedRoute({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!isLoading && !isAuthenticated) {
-      router.push('/login?redirect=/dashbaord');
+      router.push('/login?redirect=/dashboard');
     }
   }, [isAuthenticated, isLoading, router]);
 
